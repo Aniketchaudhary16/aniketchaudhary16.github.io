@@ -1,82 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Aniket Chaudhary Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniket Chaudhary | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body {
-font-family: Arial;
-margin: 0;
-padding: 0;
-background: #f4f4f4;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
 }
 
-header {
-background: #333;
-color: white;
-padding: 20px;
-text-align: center;
+body{
+background:#f5f7fb;
+color:#333;
 }
 
-section {
-padding: 20px;
-background: white;
-margin: 20px;
-border-radius: 5px;
+header{
+background:#0a66c2;
+color:white;
+padding:40px;
+text-align:center;
 }
 
-h2 {
-color: #333;
+header h1{
+font-size:36px;
 }
 
-footer {
-text-align: center;
-padding: 10px;
-background: #333;
-color: white;
+header p{
+margin-top:10px;
+font-size:18px;
 }
+
+nav{
+background:#fff;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin:0 20px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+section{
+padding:60px 80px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
+color:#0a66c2;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+footer{
+background:#0a66c2;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#0a66c2;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
 <h1>Aniket Chaudhary</h1>
-<p>Excel VBA Developer | Power BI Analyst</p>
+<p>Data Analyst | Excel VBA | Power BI | Market Research</p>
+<a class="btn" href="https://www.linkedin.com/in/aniketchaudhary1/" target="_blank">LinkedIn Profile</a>
 </header>
 
-<section>
-<h2>About Me</h2>
-<p>I specialize in Excel automation, VBA development, and Power BI dashboards.</p>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<p>
+Data Analyst with 3+ years of experience in Market Research and Analytics. 
+Specialized in Excel Automation, Power BI Dashboards, and Survey Data Processing. 
+I focus on building automation tools and dashboards that help organizations make data-driven decisions.
+</p>
 </section>
 
-<section>
-<h2>Skills</h2>
-<ul>
-<li>Excel VBA</li>
-<li>Power BI</li>
-<li>Advanced Excel</li>
-<li>Data Analysis</li>
-<li>HTML Reports</li>
-</ul>
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Excel VBA</h3>
+<p>Automation & Macro Development</p>
+</div>
+
+<div class="card">
+<h3>Power BI</h3>
+<p>Dashboard & Data Visualization</p>
+</div>
+
+<div class="card">
+<h3>Advanced Excel</h3>
+<p>Pivot, Power Query, Formulas</p>
+</div>
+
+<div class="card">
+<h3>Data Analysis</h3>
+<p>Market Research & Reporting</p>
+</div>
+
+<div class="card">
+<h3>SQL</h3>
+<p>Data Extraction & Analysis</p>
+</div>
+
+<div class="card">
+<h3>Automation</h3>
+<p>Process Optimization</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-<h2>Projects</h2>
-<ul>
-<li>Top Bottom Box Generator</li>
-<li>Excel Automation Tool</li>
-<li>Power BI Dashboard</li>
-<li>Survey Data Processor</li>
-</ul>
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Excel VBA Automation Tool</h3>
+<p>Automated survey data processing using VBA macros</p>
+</div>
+
+<div class="card">
+<h3>Top Bottom Box Generator</h3>
+<p>Market research automation for rating scale analysis</p>
+</div>
+
+<div class="card">
+<h3>Power BI Dashboard</h3>
+<p>Interactive dashboard for business insights</p>
+</div>
+
+<div class="card">
+<h3>Survey Data Processor</h3>
+<p>MDD data automation and reporting</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email: aniketchaudhary400@gmail.com</p>
+<section id="experience">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="card">
+<h3>Data Analyst</h3>
+<p>iResearch Services | Pune</p>
+<p>3+ Years Experience in Market Research Analytics</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+<p>Email: your.email@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/aniketchaudhary1</p>
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Aniket Chaudhary</p>
+<p>© 2026 Aniket Chaudhary | Portfolio Website</p>
 </footer>
 
 </body>
