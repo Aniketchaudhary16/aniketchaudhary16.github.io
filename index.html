@@ -7,7 +7,7 @@
 
 <title>Aniket Chaudhary | Data Analyst</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,27 +20,36 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fb;
+background:#f4f7ff;
 color:#333;
-transition:0.3s;
+transition:0.4s;
 }
 
-.dark-mode{
-background:#121212;
+.dark{
+background:#0f172a;
 color:white;
 }
 
-/* Hero Section */
+/* Hero */
 
 .hero{
-background:linear-gradient(120deg,#0a66c2,#0077ff);
+background:linear-gradient(120deg,#6366f1,#06b6d4,#10b981);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
 color:white;
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
+@keyframes gradient{
+0%{background-position:0%}
+50%{background-position:100%}
+100%{background-position:0%}
+}
+
 .hero h1{
-font-size:42px;
+font-size:45px;
+font-weight:700;
 }
 
 .hero p{
@@ -48,26 +57,38 @@ margin-top:10px;
 font-size:18px;
 }
 
+.typing{
+font-size:20px;
+margin-top:15px;
+}
+
 .btn{
 display:inline-block;
-margin:10px;
+margin:15px 10px;
 padding:12px 25px;
 background:white;
-color:#0a66c2;
-text-decoration:none;
+color:#333;
 border-radius:30px;
+text-decoration:none;
 font-weight:600;
+transition:0.3s;
 }
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* Toggle */
 
 .toggle{
 position:fixed;
 top:20px;
 right:20px;
-background:#333;
-color:white;
+background:white;
 padding:10px;
-border-radius:5px;
+border-radius:8px;
 cursor:pointer;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
 /* Navigation */
@@ -76,11 +97,11 @@ nav{
 background:white;
 padding:15px;
 text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.dark-mode nav{
-background:#1e1e1e;
+.dark nav{
+background:#1e293b;
 }
 
 nav a{
@@ -93,28 +114,31 @@ color:#333;
 /* Sections */
 
 section{
-padding:60px 10%;
+padding:70px 10%;
 }
 
-.section-title{
-font-size:30px;
+.title{
+font-size:32px;
 margin-bottom:30px;
-color:#0a66c2;
+background:linear-gradient(90deg,#6366f1,#06b6d4);
+-webkit-background-clip:text;
+color:transparent;
 }
 
-/* Cards */
+/* Glass Cards */
 
 .card{
-background:white;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(10px);
 padding:25px;
-border-radius:15px;
-box-shadow:0 3px 15px rgba(0,0,0,0.1);
-margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+margin-bottom:25px;
 transition:0.3s;
 }
 
-.dark-mode .card{
-background:#1e1e1e;
+.dark .card{
+background:#1e293b;
 }
 
 .card:hover{
@@ -128,22 +152,22 @@ margin-bottom:20px;
 }
 
 .bar{
-height:10px;
-background:#ddd;
+height:12px;
+background:#e5e7eb;
 border-radius:10px;
 }
 
 .progress{
-height:10px;
-background:#0a66c2;
+height:12px;
+background:linear-gradient(90deg,#6366f1,#06b6d4);
 border-radius:10px;
 }
 
 /* Timeline */
 
 .timeline{
-border-left:3px solid #0a66c2;
-padding-left:20px;
+border-left:4px solid #6366f1;
+padding-left:25px;
 }
 
 .timeline-item{
@@ -153,7 +177,7 @@ margin-bottom:30px;
 /* Footer */
 
 footer{
-background:#0a66c2;
+background:linear-gradient(120deg,#6366f1,#06b6d4);
 color:white;
 text-align:center;
 padding:20px;
@@ -165,11 +189,13 @@ padding:20px;
 
 <body>
 
-<div class="toggle" onclick="toggleMode()">🌙</div>
+<div class="toggle" onclick="toggle()">🌙</div>
 
 <div class="hero">
 
 <h1>Aniket Chaudhary</h1>
+
+<div class="typing" id="typing"></div>
 
 <p>Data Analyst | Excel VBA | Power BI | Market Research</p>
 
@@ -192,13 +218,13 @@ padding:20px;
 
 <section id="about">
 
-<h2 class="section-title">About Me</h2>
+<h2 class="title">About Me</h2>
 
 <div class="card">
 
 Data Analyst with 3+ years of experience in Market Research and Analytics.
 Currently working at iResearch Services Pune.
-Specialized in Excel automation, Power BI dashboards and survey data processing.
+Specialized in Excel Automation, Power BI dashboards and survey data processing.
 
 </div>
 
@@ -207,36 +233,28 @@ Specialized in Excel automation, Power BI dashboards and survey data processing.
 
 <section id="skills">
 
-<h2 class="section-title">Skills</h2>
+<h2 class="title">Skills</h2>
 
 <div class="card">
 
 <div class="skill">
 Excel VBA
-<div class="bar">
-<div class="progress" style="width:90%"></div>
-</div>
+<div class="bar"><div class="progress" style="width:92%"></div></div>
 </div>
 
 <div class="skill">
 Power BI
-<div class="bar">
-<div class="progress" style="width:85%"></div>
-</div>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
 </div>
 
 <div class="skill">
 Advanced Excel
-<div class="bar">
-<div class="progress" style="width:95%"></div>
-</div>
+<div class="bar"><div class="progress" style="width:95%"></div></div>
 </div>
 
 <div class="skill">
 SQL
-<div class="bar">
-<div class="progress" style="width:75%"></div>
-</div>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
 </div>
 
 </div>
@@ -246,11 +264,11 @@ SQL
 
 <section id="experience">
 
-<h2 class="section-title">Experience</h2>
+<h2 class="title">Experience</h2>
 
 <div class="timeline">
 
-<div class="timeline-item">
+<div class="timeline-item card">
 <h3>Data Analyst</h3>
 <p>iResearch Services | Pune</p>
 <p>3+ Years Experience</p>
@@ -263,7 +281,7 @@ SQL
 
 <section id="contact">
 
-<h2 class="section-title">Contact</h2>
+<h2 class="title">Contact</h2>
 
 <div class="card">
 
@@ -271,7 +289,7 @@ SQL
 
 <p>LinkedIn: linkedin.com/in/aniketchaudhary1</p>
 
-<p>Email: your.email@gmail.com</p>
+<p>Email: aniketchaudhary311@gmail.com</p>
 
 </div>
 
@@ -287,9 +305,49 @@ SQL
 
 <script>
 
-function toggleMode(){
-document.body.classList.toggle("dark-mode");
+/* Dark Mode */
+
+function toggle(){
+document.body.classList.toggle("dark");
 }
+
+/* Typing Animation */
+
+const text=["Data Analyst","Excel VBA Developer","Power BI Developer","Automation Specialist"];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current=text[i];
+
+if(isDeleting){
+document.getElementById("typing").textContent=current.substring(0,j--);
+}else{
+document.getElementById("typing").textContent=current.substring(0,j++);
+}
+
+if(!isDeleting && j===current.length){
+isDeleting=true;
+setTimeout(type,1000);
+return;
+}
+
+if(isDeleting && j===0){
+isDeleting=false;
+i++;
+if(i===text.length){
+i=0;
+}
+}
+
+setTimeout(type,100);
+}
+
+type();
 
 </script>
 
