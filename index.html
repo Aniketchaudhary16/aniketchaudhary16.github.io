@@ -16,47 +16,46 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins', sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#f5f8fc;
-color:#1f2937;
+background:#f8fbff;
+color:#2c3e50;
+scroll-behavior:smooth;
 }
 
 /* Hero */
 
 .hero{
-background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+background:linear-gradient(135deg,#2563eb,#06b6d4);
 color:white;
-padding:100px 20px;
+padding:90px 20px;
 text-align:center;
 }
 
 .hero img{
-width:130px;
+width:120px;
 border-radius:50%;
-border:5px solid white;
-margin-bottom:20px;
+border:4px solid white;
+margin-bottom:15px;
 }
 
 .hero h1{
-font-size:44px;
+font-size:42px;
 font-weight:700;
 }
 
 .hero p{
 margin-top:10px;
 font-size:18px;
-opacity:.9;
 }
 
 .btn{
 display:inline-block;
-margin:12px;
+margin:10px;
 padding:12px 28px;
 background:white;
-color:#1d4ed8;
+color:#2563eb;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
@@ -64,8 +63,7 @@ transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 20px rgba(0,0,0,.1);
+transform:translateY(-3px);
 }
 
 /* Navbar */
@@ -74,29 +72,29 @@ nav{
 background:white;
 padding:18px;
 text-align:center;
-box-shadow:0 4px 20px rgba(0,0,0,.05);
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 position:sticky;
 top:0;
 z-index:1000;
 }
 
 nav a{
-margin:0 25px;
+margin:0 20px;
 text-decoration:none;
 font-weight:600;
-color:#334155;
+color:#374151;
 }
 
 /* Sections */
 
 section{
-padding:80px 10%;
+padding:70px 10%;
 }
 
 .title{
-font-size:34px;
+font-size:32px;
 margin-bottom:30px;
-color:#1d4ed8;
+color:#2563eb;
 }
 
 /* Cards */
@@ -104,14 +102,14 @@ color:#1d4ed8;
 .card{
 background:white;
 padding:30px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
-margin-bottom:25px;
+border-radius:14px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+margin-bottom:20px;
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-6px);
 }
 
 /* Grid */
@@ -129,32 +127,34 @@ margin-bottom:20px;
 }
 
 .bar{
-height:12px;
+height:10px;
 background:#e5e7eb;
 border-radius:20px;
 }
 
 .progress{
-height:12px;
-background:linear-gradient(90deg,#1d4ed8,#06b6d4);
+height:10px;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
 border-radius:20px;
 }
 
-/* Timeline */
+/* Projects */
 
-.timeline{
-border-left:4px solid #1d4ed8;
-padding-left:25px;
+.project{
+padding:25px;
+border-radius:12px;
+background:#f1f7ff;
+transition:.3s;
 }
 
-.timeline-item{
-margin-bottom:30px;
+.project:hover{
+transform:translateY(-5px);
 }
 
 /* Footer */
 
 footer{
-background:#1d4ed8;
+background:#2563eb;
 color:white;
 text-align:center;
 padding:20px;
@@ -174,7 +174,7 @@ padding:20px;
 
 <p>Data Analyst | Excel VBA | Power BI | Market Research</p>
 
-<a class="btn" href="resume.pdf" download>Download Resume</a>
+<a class="btn" href="#">Download Resume</a>
 <a class="btn" href="https://www.linkedin.com/in/aniketchaudhary1/" target="_blank">LinkedIn</a>
 
 </div>
@@ -185,6 +185,7 @@ padding:20px;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
 <a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 
@@ -200,7 +201,6 @@ padding:20px;
 Data Analyst with 3+ years of experience in Market Research and Analytics.
 Currently working at iResearch Services Pune.
 Specialized in Excel Automation, Power BI dashboards, and Survey Data Processing.
-Focused on building automation and data-driven insights.
 
 </div>
 
@@ -242,9 +242,7 @@ SQL
 
 <h2 class="title">Experience</h2>
 
-<div class="timeline">
-
-<div class="timeline-item card">
+<div class="card">
 
 <h3>Data Analyst</h3>
 <p>iResearch Services | Pune</p>
@@ -254,9 +252,38 @@ SQL
 <li>Survey Data Analysis</li>
 <li>Excel VBA Automation</li>
 <li>Power BI Dashboard Creation</li>
-<li>Data Reporting & Automation</li>
+<li>Automation Reporting</li>
 </ul>
 
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2 class="title">Portfolio Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>Excel VBA Automation</h3>
+<p>Automated survey processing using VBA reducing manual effort by 80%.</p>
+</div>
+
+<div class="project">
+<h3>Power BI Dashboard</h3>
+<p>Interactive dashboards for business insights and reporting.</p>
+</div>
+
+<div class="project">
+<h3>Survey Data Analysis</h3>
+<p>Analyzed market research data and generated reports.</p>
+</div>
+
+<div class="project">
+<h3>Data Automation Tool</h3>
+<p>Created automation tool for data cleaning and reporting.</p>
 </div>
 
 </div>
@@ -271,9 +298,9 @@ SQL
 <div class="grid">
 
 <div class="card">SQL Certification</div>
-<div class="card">Data Analysis using Excel</div>
+<div class="card">Advanced Excel</div>
+<div class="card">Power BI</div>
 <div class="card">Marketing Analytics</div>
-<div class="card">Cyber Security Awareness</div>
 
 </div>
 
@@ -288,7 +315,6 @@ SQL
 
 <p>📍 Pune, India</p>
 <p>LinkedIn: linkedin.com/in/aniketchaudhary1</p>
-<p>Email: your.email@gmail.com</p>
 
 </div>
 
@@ -297,9 +323,10 @@ SQL
 
 <footer>
 
-© 2026Aniket Chaudhary | Ultimate Portfolio
+© 2026 Aniket Chaudhary | Ultimate Portfolio
 
 </footer>
 
 </body>
+
 </html>
